@@ -1,0 +1,49 @@
+:root{
+    --bg-color: white;
+    --typewriterSpeed: 1s;
+}
+
+.logo{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+    padding: 0;
+    margin: 0.4em;
+}
+
+.logo::before,
+.logo::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo::before{
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(8) forwards;
+}
+
+.logo::after {
+    width: 0.1em;
+    background:black;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(8) forwards,
+        blink 0.7s steps(8) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Shopping Cart JS by David Guzman</title>
+</head>
+<body>
+    <header>
+            <h1 class="logo">Tech Dev</h1>
+            <div class="cart">
+                <span class="material-symbols-outlined" style="font-size: 34px;">
+                    shopping_cart
+                </span>
+                <div id="listCart">
+                    <div id="textDel">You don't have any products in the cart</div>
+                    <table>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <div id="empty" ></div>
+                </div>
+            </div>
+            <img src="images/banner.jpg" class="banner" alt="Tech Shop">
+    </header>
+    <div>
+        <h3>The best computer for the best programmer</h3>
+    </div>
+    <div id="products">
+        <div class="card">
+            <img src="images/macbook.png" alt="macbook">
+            <p class="title">Macbook Pro 14 M1</p>
+            <p class="description">RAM 16GB - 1TB SSD - Chip M1 2021 Gris Espacial</p>
+            <p class="price">$13.799.000</p>
+            <a href="#" class="add" data-id="1">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="images/zephyrus.png" alt="asus">
+            <p class="title">ROG Zephyrus G14</p>
+            <p class="description">Asus ROG RAM 16GB - 1TB SSD - Ryzen 9 5800H RTX3060 6GB</p>
+            <p class="price">$8.899.000</p>
+            <a href="#" class="add" data-id="2">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="images/legion.jpg" alt="asus">
+            <p class="title">Lenovo Legion 5 Pro</p>
+            <p class="description">RAM 32GB - 1TB SDD - 16" - RTX3060 AMD Ryzen 7 5800H</p>
+            <p class="price">$8.098.000</p>
+            <a href="#" class="add" data-id="3">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="images/omen.jpg" alt="asus">
+            <p class="title">HP Omen 16</p>
+            <p class="description">RAM 16GB - 512GB SSD Intel i7 11800H Tubo Boost RTX 3050Ti</p>
+            <p class="price">$6.599.000</p>
+            <a href="#" class="add" data-id="4">Add to Cart</a>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Skills</h1>
+        <p>JavaScript</p>
+        <p>HTML 5</p>
+        <p>CSS 3/CSS Animation</p>
+        <p class="copy"> Copyright David Guzman</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
