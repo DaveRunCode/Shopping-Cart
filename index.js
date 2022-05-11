@@ -16,6 +16,12 @@ function listeners(){
         empty.innerHTML = ''
         listHTML()
     }) // EmptyCart
+
+    //Update, local storage, muestra los articulos
+    document.addEventListener('DOMContentLoaded', ()=>{
+        cart = JSON.parse(localStorage.getItem('cart')) || []
+        listHTML() // Volvemos a llamar el HTML
+    })
 }
 
 //Functions
@@ -82,7 +88,15 @@ function listHTML(){
         `
         listCart.appendChild(row)
     })
+    // Update de local storage !
+    sincronizarStorage()
 }
+// Update, agregamos la función para actualizar el archivo a local storage.
+
+function sincronizarStorage(){
+    localStorage.setItem('cart', JSON.stringify(cart))
+}
+
 
 //Clean HTML
 function cleanHTML(){
